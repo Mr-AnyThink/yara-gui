@@ -1,0 +1,19 @@
+<html>  
+<body>  
+        <div class="bd-example" align="middle">
+                <img src="{{url_for('static', filename='YARAUI.png')}}" align="middle" />
+        </div>
+        <div class="bd-example" align="middle">
+	<form action = "http://192.168.10.136:8080/uploader" method = "POST" enctype = "multipart/form-data">
+        	<table>
+                <tr><td>Yara Index</td>
+                <td><input type ="text" name ="yaraindex"></td>
+                </tr>
+                <tr><br/><br/></tr>
+                <tr><td><input type = "file" name = "file" /></td>
+                <td><input type = "submit" value="Scan Yara"/></td></tr>
+                </table>
+        </form>   
+        </div>
+</body>  
+</html> 
