@@ -3,7 +3,7 @@
 Yara-GUI is basic web interface to upload a file and run all yara signature agaist it. Follow below steps to install the tool. You must have python3 installed.
 
     1. Clone git repository
-        https://github.com/Mr-AnyThink/yara-gui.git
+        git clone https://github.com/Mr-AnyThink/yara-gui.git
 
     2. goto yara-gui directory and make setup.sh executable. and run to setup tool
         chomd +x setup.sh
