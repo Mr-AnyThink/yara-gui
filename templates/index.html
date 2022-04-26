@@ -10,7 +10,37 @@
                 <tr><td><input type = "file" name = "file" /></td>
                 <td><input type = "submit" value="Scan Yara"/></td></tr>
                 </table>
-        </form>   
+        </form>
+        <form action = "deleteUpload">
+        	<table>
+                <tr><br/><br/></tr>
+                <td><input type = "submit" value="Clear Upload Folder"/></td></tr>
+                </table>
+        </form>
+        <form>
+                <table>
+                        <tr><td align="Left"><b>File Name:</b></td>
+                                <td>
+                                {% if no_file == 0: %}
+                                        Provide File to Scan
+                                {% else: %}
+                                        {{ filename }}
+                                {% endif %}
+                                </td>
+                        </tr>
+                        <tr><td align="Left"><b>YARA Rule Match:</b></td>
+                        <td>
+                        {% if rule_matches == 'None': %}
+                                No matches Found
+                        {% else: %}
+                                {% for rules in rule_matches: %}
+                                        {{ rules }}
+                                        <br/>
+                                {% endfor %}
+                        {% endif %}
+                        </td></tr>
+                </table>
+        </form>
         </div>
 </body>  
 </html> 
