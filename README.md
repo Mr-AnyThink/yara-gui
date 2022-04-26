@@ -5,7 +5,8 @@ Yara-GUI is basic web interface to upload a file and run all yara signature agai
     1. Clone git repository
         git clone https://github.com/Mr-AnyThink/yara-gui.git
 
-    2. goto yara-gui directory and make setup.sh executable. and run to setup tool
+    2. goto yara-gui directory and make setup.sh executable. Execute setup.sh to configure the tool
+        cd yara-gui
         chmod +x setup.sh
         ./setup.sh
 
