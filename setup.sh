@@ -1,8 +1,8 @@
 #Setup.sh
 
 #install dependancies
-pip install flask
-pip install yara-python
+pip3 install flask
+pip3 install yara-python
 
 # Clone yara rules
 # By defalt all rule will be cloned under CDW/rules
